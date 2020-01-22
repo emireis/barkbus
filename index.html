@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Bark Bus</title>
+</head>
+<body>
+
+<header>
+  <h1 id="title">The Bark Bus</h1>
+  <img src="http://barkacademy.co.uk/wp-content/uploads/2017/03/BarkAcademyDecalFINAL-min-e1488829621449.png" id="img-logo" alt="Dogs riding on a school bus">
+  <p id="description">Busy dog parents, we're here to help! The Bark Bus will pick your furry friends up first thing in the morning, and drop them safely back at home when you return for the day.</p>
+  <p id="description">Ready to get started? Fill out the form below and we'll be in touch ASAP!</p>
+</header>
+
+<form id="survey-form">
+  <div class="form-group">
+    <!--  Name  -->
+    <label for="name" id="name-label">Your Name:</label>
+    <input id="name" type="text" name="name" class="form-input" placeholder="Enter your name" required>
+  </div>
+  <div class="form-group">
+    <!-- Phone Number -->
+    <label for="phone" id="phone-label">Phone Number:</label>
+    <input id="phone" type="text" name="phone" class="form-input" placeholder="Enter your phone number">
+  </div>
+  <div class="form-group">
+    <!-- email address -->
+    <label for="email" id="email-label">Email Address:</label>
+    <input id="email" type="email" name="email" class="form-input" placeholder="Enter yor email address" required>
+  </div>
+  <div class="form-group">
+    <!-- Dog's Name -->
+    <label for="dog-name" id="dog-name">Your Dog's Name:</label>
+    <input type="text" name="dog-name" id="dog-name" class="form-input" placeholder="Enter your dog's name" required>
+  </div>
+  <div class="form-group">
+    <!-- Number of Days -->
+    <label for="number" id="number-label">How many days per week will you need doggy care?</label>
+    <input id="number" type="number" name="number" min="1" max="5" class="form-input" placeholder="Number of days per week">
+  </div>
+    <div class="form-group">
+    <!-- Dog size -->
+    <label for="size" id="size">How big is your dog?</label>
+      <select name="dog-size" id="dropdown" class="form-input" required>
+        <option disable selected value>Select a size</option>
+        <option value="sm-dog">0-25 lbs</option>
+        <option value="med-dog">25-50 lbs</option>
+        <option value="lg-dog">50-75 lbs</option>
+        <option value="xl-dog">75 lb +</option>
+      </select>
+  </div>
+  <div id="schedule" class="form-group">
+    <!--   Days needed   -->
+    <p>Which days will your furry friend be staying with us?</p>
+    <div><label for="Monday"><input value="Monday" type="checkbox" name="Days">Monday</label></div>
+    <div><label for="Tuesday"><input value="Tuesday" type="checkbox" name="Days">Tuesday</label></div>
+    <div><label for="Wednesday"><input value="Wednesday" type="checkbox" name="Days">Wednesday</label></div>
+    <div><label for="Thursday"><input value="Thursday" type="checkbox" name="Days">Thursday</label></div>
+    <div><label for="Friday"><input value="Friday" type="checkbox" name="Days">Friday</label></div>
+    <div><label for="Saturday"><input value="Saturday" type="checkbox" name="Days">Saturday</label></div>
+    <div><label for="Sunday"><input value="Sunday" type="checkbox" name="Days">Sunday</label></div>
+  </div>
+  <div class="form-group">
+    <p>Is your dog a fan of cookies?</p>
+    <div><label for="cookies-yes">
+      <input type="radio" id="cookies-yes" name="cookies" value="cookies-yes"> Definitely yes
+    </label></div>
+    <div><label for="cookies-no">
+      <input type="radio" id="cookies-no" name="cookies" value="cookies-no"> Not really
+      </label></div>
+  </div>
+  <div class="form-group">
+    <p>Do you have any other questions for us?</p>
+    <textarea name="comments" id="comments" class="input-text" placeholder="Enter your text here."></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+  </div>
+
+</form>
+
+</body>
+</html>
