@@ -6,26 +6,21 @@
   }
   
   body {
-    font-family: 'Fredericka the Great', cursive;
-    color: white;
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-blue);
   /*   background: var(--color-blue); */
     margin: 0;
   }
   
   form {
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
     background: var(--color-grey);
     width: 80%;
     margin: auto;
     padding: 2rem 2.5rem;
     border-radius: 15px;
   }
-  
-  /* @media (max-width: 460px) {
-    form {
-      width: 95%;
-      padding: 1.5rem;
-    }
-  } */
   
   @media (min-width: 800px) {
     form {
@@ -34,6 +29,7 @@
   }
   
   h1 {
+    font-family: 'Fredericka the Great', cursive;
     font-size: 3.7rem;
     text-align: center;
     margin: 50px auto 20px auto;
@@ -52,12 +48,34 @@
     }
   }
   
-  #description {
+  input, button, select, textarea {
+    margin-right: 0.6rem;
+    font-size: 1.1rem;
+    color: #495057;
+  }
+
+  select {
+    height: 1.4rem;
+  }
+
+  .description {
     color: var(--color-blue);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
-    margin: 20px 2.4rem;
-  
+    width: 80%;
+    margin: 2.4rem auto 2rem auto;
+  }
+
+  @media (min-width: 800px) {
+    .description {
+      width: 600px;
+    }
+  }
+
+
+
+  #form-label {
+    font-family: 'Fredericka the Great', cursive;
   }
   
   .form-group {
@@ -67,10 +85,13 @@
   
   .form-input {
     width: 90%;
-    margin: .6rem 0;
+    height: 1.4rem;
+    
+    margin: 0.3rem 0 0 0;
     padding: .55rem;
+    background-color: #fff;
     border-radius: 5px;
-    font-family: 'Nunito', sans-serif;
+    border: 1px solid #59cede;
   }
   
   @media (max-width: 350px) {
@@ -79,23 +100,13 @@
     }
   }
   
-  #dropdown {
-  /*   width: 100%;
-    margin: .6rem 0;
-    padding: .55rem;
-    border-radius: 5px;
-    font-family: inherit; */
-  }
-  
-  /* #schedule {
-    
-  } */
-  
-  .input-text {
+  .input-textarea {
     padding: 0.5rem;
     width: 95%;
     min-height: 120px;
     resize: vertical;
+    border-radius: 5px;
+    border: 1px solid #59cede;
   }
   
   .submit-button {

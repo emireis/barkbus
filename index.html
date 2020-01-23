@@ -14,10 +14,10 @@
 <header>
   <h1 id="title">The Bark Bus</h1>
   <img src="http://barkacademy.co.uk/wp-content/uploads/2017/03/BarkAcademyDecalFINAL-min-e1488829621449.png" id="img-logo" alt="Dogs riding on a school bus">
-  <p id="description">Busy dog parents, we're here to help! The Bark Bus will pick your furry friends up first thing in the morning, and drop them safely back at home when you return for the day.</p>
-  <p id="description">Ready to get started? Fill out the form below and we'll be in touch ASAP!</p>
+  <p class="description" id="intro">Working dog parents, we're here to help! The Bark Bus will pick your furry friends up first thing in the morning, care for them at our 10-acre play ranch and training school, and deliver them safely back home at the end of the day.</p>
+  <p class="description" id="form-label">Ready to get started? Fill out the form below and we'll be in touch ASAP!</p>
 </header>
-<p>This is a test</p>
+
 <form id="survey-form">
   <div class="form-group">
     <!--  Name  -->
@@ -47,7 +47,7 @@
     <div class="form-group">
     <!-- Dog size -->
     <label for="size" id="size">How big is your dog?</label>
-      <select name="dog-size" id="dropdown" class="form-input" required>
+      <select name="dog-size" class="form-input" required>
         <option disable selected value>Select a size</option>
         <option value="sm-dog">0-25 lbs</option>
         <option value="med-dog">25-50 lbs</option>
@@ -55,9 +55,10 @@
         <option value="xl-dog">75 lb +</option>
       </select>
   </div>
+
+  <p>Which days will your furry friend be staying with us?</p>
   <div id="schedule" class="form-group">
     <!--   Days needed   -->
-    <p>Which days will your furry friend be staying with us?</p>
     <div><label for="Monday"><input value="Monday" type="checkbox" name="Days">Monday</label></div>
     <div><label for="Tuesday"><input value="Tuesday" type="checkbox" name="Days">Tuesday</label></div>
     <div><label for="Wednesday"><input value="Wednesday" type="checkbox" name="Days">Wednesday</label></div>
@@ -77,10 +78,10 @@
   </div>
   <div class="form-group">
     <p>Do you have any other questions for us?</p>
-    <textarea name="comments" id="comments" class="input-text" placeholder="Enter your text here."></textarea>
+    <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your text here."></textarea>
   </div>
   <div class="form-group">
-    <button type="submit" id="submit" class="submit-button">Submit</button>
+    <button type="submit" id="submit-button" class="submit-button">Submit</button>
   </div>
 
 </form>
