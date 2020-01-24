@@ -48,7 +48,7 @@
     }
   }
   
-  input, button, select, textarea {
+  input, select, button {
     margin-right: 0.6rem;
     font-size: 1.1rem;
     color: #495057;
@@ -116,7 +116,7 @@
     padding: 0.55rem;
     background-color: var(--color-yellow);
     border-radius: 5px;
-  /*   color: inherit; */
+    font-family: 'Fredericka the Great', cursive;
   }
   
   #img-logo {
